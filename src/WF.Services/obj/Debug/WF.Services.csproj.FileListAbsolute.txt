@@ -1,0 +1,6 @@
+C:\Users\joorganaut\Documents\Personal\WorkForceAssessment\src\WF.Services\bin\Debug\WF.Services.dll
+C:\Users\joorganaut\Documents\Personal\WorkForceAssessment\src\WF.Services\bin\Debug\WF.Services.pdb
+C:\Users\joorganaut\Documents\Personal\WorkForceAssessment\src\WF.Services\obj\Debug\WF.Services.csprojAssemblyReference.cache
+C:\Users\joorganaut\Documents\Personal\WorkForceAssessment\src\WF.Services\obj\Debug\WF.Services.csproj.CoreCompileInputs.cache
+C:\Users\joorganaut\Documents\Personal\WorkForceAssessment\src\WF.Services\obj\Debug\WF.Services.dll
+C:\Users\joorganaut\Documents\Personal\WorkForceAssessment\src\WF.Services\obj\Debug\WF.Services.pdb
