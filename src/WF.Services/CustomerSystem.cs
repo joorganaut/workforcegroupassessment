@@ -16,7 +16,7 @@ namespace WF.Services
             if (request != null && !string.IsNullOrWhiteSpace(request.CustomerID))
             {
                 var customer = await CustomerDAO.RetrieveByCIfId(request.CustomerID);
-                if (customer != null)
+                if (customer != null && string.IsNullOrWhiteSpace(customer.Error))
                 {
                     response.Customer = customer;
                     response.ResponseCode = "00";

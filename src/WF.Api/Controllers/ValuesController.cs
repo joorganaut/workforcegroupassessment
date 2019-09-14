@@ -3,37 +3,46 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Net;
 using System.Net.Http;
+using System.Threading.Tasks;
 using System.Web.Http;
+using WF.Core.Model;
+using WF.Core.Models;
+using WF.Service;
+using WF.Services;
 
 namespace WF.Api.Controllers
 {
     public class ValuesController : ApiController
     {
-        // GET api/values
-        public IEnumerable<string> Get()
+        AccountSystem aSystem = new AccountSystem();
+        [HttpPost]
+        //[Authorize(Roles = "admin, posting, general")]
+        [Route("guest/RetrieveAccountDetails")]
+        public async Task<IHttpActionResult> GetAccountDetails(AccountRequest request)
         {
-            return new string[] { "value1", "value2" };
+            AccountResponse result = new AccountResponse();
+            result = await aSystem.GetAccountResponseAsync(request);
+            return Ok(result);
         }
-
-        // GET api/values/5
-        public string Get(int id)
+        CustomerSystem cSystem = new CustomerSystem();
+        [HttpPost]
+        //[Authorize(Roles = "admin, posting, general")]
+        [Route("guest/RetrieveCustomerDetails")]
+        public async Task<IHttpActionResult> RetrieveCustomerDetails(CustomerRequest request)
         {
-            return "value";
+            CustomerResponse result = new CustomerResponse();
+            result = await cSystem.GetCustomerResponseAsync(request);
+            return Ok(result);
         }
-
-        // POST api/values
-        public void Post([FromBody]string value)
+        TransactionSystem tSystem = new TransactionSystem();
+        [HttpPost]
+        //[Authorize(Roles = "admin, posting, general")]
+        [Route("guest/RetrieveTransactionDetails")]
+        public async Task<IHttpActionResult> RetrieveTransactionDetailsByRef(TransactionRequest request)
         {
-        }
-
-        // PUT api/values/5
-        public void Put(int id, [FromBody]string value)
-        {
-        }
-
-        // DELETE api/values/5
-        public void Delete(int id)
-        {
+            TransactionResponse result = new TransactionResponse();
+            result = await tSystem.GetTransactionByRefResponseAsync(request);
+            return Ok(result);
         }
     }
 }

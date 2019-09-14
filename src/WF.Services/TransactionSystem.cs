@@ -16,7 +16,7 @@ namespace WF.Services
             if (request != null && !string.IsNullOrWhiteSpace(request.TransactionRef))
             {
                 var transaction = await TransactionDAO.RetrieveTransactionsByReference(request.TransactionRef);
-                if (transaction != null)
+                if (transaction != null && transaction.Count > 0)
                 {
                     response.Transactions = new List<Core.Data.Transaction>();
                     response.Transactions.AddRange(transaction);
