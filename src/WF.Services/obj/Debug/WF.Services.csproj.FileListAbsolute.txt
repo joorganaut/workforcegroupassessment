@@ -1,10 +1,6 @@
+C:\Users\joorganaut\Documents\Personal\WorkForceAssessment\src\WF.Services\bin\Debug\WF.Services.dll.config
 C:\Users\joorganaut\Documents\Personal\WorkForceAssessment\src\WF.Services\bin\Debug\WF.Services.dll
 C:\Users\joorganaut\Documents\Personal\WorkForceAssessment\src\WF.Services\bin\Debug\WF.Services.pdb
-C:\Users\joorganaut\Documents\Personal\WorkForceAssessment\src\WF.Services\obj\Debug\WF.Services.csprojAssemblyReference.cache
-C:\Users\joorganaut\Documents\Personal\WorkForceAssessment\src\WF.Services\obj\Debug\WF.Services.csproj.CoreCompileInputs.cache
-C:\Users\joorganaut\Documents\Personal\WorkForceAssessment\src\WF.Services\obj\Debug\WF.Services.dll
-C:\Users\joorganaut\Documents\Personal\WorkForceAssessment\src\WF.Services\obj\Debug\WF.Services.pdb
-C:\Users\joorganaut\Documents\Personal\WorkForceAssessment\src\WF.Services\bin\Debug\WF.Services.dll.config
 C:\Users\joorganaut\Documents\Personal\WorkForceAssessment\src\WF.Services\bin\Debug\AXAMansard.Framework.dll
 C:\Users\joorganaut\Documents\Personal\WorkForceAssessment\src\WF.Services\bin\Debug\Newtonsoft.Json.dll
 C:\Users\joorganaut\Documents\Personal\WorkForceAssessment\src\WF.Services\bin\Debug\Ninject.dll
@@ -47,4 +43,8 @@ C:\Users\joorganaut\Documents\Personal\WorkForceAssessment\src\WF.Services\bin\D
 C:\Users\joorganaut\Documents\Personal\WorkForceAssessment\src\WF.Services\bin\Debug\Antlr3.Runtime.xml
 C:\Users\joorganaut\Documents\Personal\WorkForceAssessment\src\WF.Services\bin\Debug\Iesi.Collections.xml
 C:\Users\joorganaut\Documents\Personal\WorkForceAssessment\src\WF.Services\bin\Debug\System.ValueTuple.xml
+C:\Users\joorganaut\Documents\Personal\WorkForceAssessment\src\WF.Services\obj\Debug\WF.Services.csprojAssemblyReference.cache
+C:\Users\joorganaut\Documents\Personal\WorkForceAssessment\src\WF.Services\obj\Debug\WF.Services.csproj.CoreCompileInputs.cache
 C:\Users\joorganaut\Documents\Personal\WorkForceAssessment\src\WF.Services\obj\Debug\WF.Services.csproj.CopyComplete
+C:\Users\joorganaut\Documents\Personal\WorkForceAssessment\src\WF.Services\obj\Debug\WF.Services.dll
+C:\Users\joorganaut\Documents\Personal\WorkForceAssessment\src\WF.Services\obj\Debug\WF.Services.pdb

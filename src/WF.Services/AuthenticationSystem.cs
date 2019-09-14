@@ -16,7 +16,8 @@ namespace WF.Service
     public class AuthenticationSystem
     {
         HTTPConfig postingConfig;
-        string LDAPHost = ConfigurationManager.AppSettings["LDAPHost"]; //LDAP://ldap.forumsys.com:389/ou=scientists,dc=example,dc=com
+        string LDAPHost = "LDAP://ldap.forumsys.com:389/ou=scientists,dc=example,dc=com";
+           //ConfigurationManager.AppSettings["LDAPHost"]; //
         public AuthenticationSystem()
         {
             postingConfig = new HTTPConfig();
@@ -32,7 +33,7 @@ namespace WF.Service
             try
             {
                 string ldapServer = LDAPHost;
-                string userName = request.Username;
+                string userName = $"cn={request.Username},dc=example,dc=com";
                 string password = request.Password;
                 using (var dirctoryEntry = new DirectoryEntry(ldapServer, userName, password, AuthenticationTypes.ServerBind))
                 {

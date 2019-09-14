@@ -99,7 +99,7 @@ namespace WF.Service
             if (request != null && !string.IsNullOrWhiteSpace(request.AccountNumber))
             {
                 var account = await GetAccountByNumber(request.AccountNumber);
-                if (account != null)
+                if (account != null && string.IsNullOrWhiteSpace(account.Error))
                 {
                     response.Accounts = new List<Account>();
                     response.Accounts.Add(account);

@@ -1,5 +1,3 @@
-C:\Users\joorganaut\Documents\Personal\WorkForceAssessment\src\WF.Core\obj\Debug\WF.Core.csprojAssemblyReference.cache
-C:\Users\joorganaut\Documents\Personal\WorkForceAssessment\src\WF.Core\obj\Debug\WF.Core.csproj.CoreCompileInputs.cache
 C:\Users\joorganaut\Documents\Personal\WorkForceAssessment\src\WF.Core\bin\Debug\WF.Core.dll.config
 C:\Users\joorganaut\Documents\Personal\WorkForceAssessment\src\WF.Core\bin\Debug\WF.Core.dll
 C:\Users\joorganaut\Documents\Personal\WorkForceAssessment\src\WF.Core\bin\Debug\WF.Core.pdb
@@ -30,6 +28,8 @@ C:\Users\joorganaut\Documents\Personal\WorkForceAssessment\src\WF.Core\bin\Debug
 C:\Users\joorganaut\Documents\Personal\WorkForceAssessment\src\WF.Core\bin\Debug\Remotion.Linq.xml
 C:\Users\joorganaut\Documents\Personal\WorkForceAssessment\src\WF.Core\bin\Debug\Remotion.Linq.EagerFetching.xml
 C:\Users\joorganaut\Documents\Personal\WorkForceAssessment\src\WF.Core\bin\Debug\System.ValueTuple.xml
+C:\Users\joorganaut\Documents\Personal\WorkForceAssessment\src\WF.Core\obj\Debug\WF.Core.csprojAssemblyReference.cache
+C:\Users\joorganaut\Documents\Personal\WorkForceAssessment\src\WF.Core\obj\Debug\WF.Core.csproj.CoreCompileInputs.cache
 C:\Users\joorganaut\Documents\Personal\WorkForceAssessment\src\WF.Core\obj\Debug\WF.Core.csproj.CopyComplete
 C:\Users\joorganaut\Documents\Personal\WorkForceAssessment\src\WF.Core\obj\Debug\WF.Core.dll
 C:\Users\joorganaut\Documents\Personal\WorkForceAssessment\src\WF.Core\obj\Debug\WF.Core.pdb

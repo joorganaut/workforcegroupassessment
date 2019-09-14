@@ -10,6 +10,7 @@ using System.Linq;
 using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
+using WF.Core.Models;
 
 namespace WF.Service
 {
@@ -28,33 +29,43 @@ namespace WF.Service
         }
         public async Task<User> ValidateUser(string username, string password)
         {
-            User result = null;
-            if(string.IsNullOrWhiteSpace(username) || string.IsNullOrWhiteSpace(password))
+            User result = new User() {  Username = username, Name = "Authenticated User", };
+            try
             {
-                result = new User() { Error = "Invalid Credentials" };
-                return result;
-            }
-            if (username == "Megatron" && password == "decepticons attack")
-            {
-                result = new User()
+                if (string.IsNullOrWhiteSpace(username) || string.IsNullOrWhiteSpace(password))
                 {
-                    FullName = "My Name is Megatron",
-                    IsAuthenticated = true,
-                    Username = "Megatron",
+                    result = new User() { Error = "Invalid Credentials" };
+                    return result;
+                }
+                if (username == "Megatron" && password == "decepticons attack")
+                {
+                    result = new User()
+                    {
+                        FullName = "My Name is Megatron",
+                        IsAuthenticated = true,
+                        Username = "Megatron",
+                    };
+                    return result;
+                }
+                AuthenticationRequest auth = new AuthenticationRequest() {
+                     Username = username,
+                     Password = password
                 };
-                return result;
+                var auth_result = await new AuthenticationSystem().AuthenticateActiveDirectory(auth);
+                if (auth_result.IsAuthenticated)
+                {
+                    result = new User() { Error = $"User authentication successful" };
+                    result.IsAuthenticated = auth_result.IsAuthenticated;
+                }
+                else
+                {
+                    result = new User() { Error = $"Unable to Authenticate User: {Error}" };
+                    return result;
+                }
             }
-            result = await RetrieveByUsername(username);
-            if (result == null)
+            catch (Exception e)
             {
-                result = new User() { Error = $"Unable to retrieve User: {Error}" };
-                return result;
-            }
-            if (new MD5Password().CreateSecurePassword(password) == result.Password)
-            {
-                result.Error = "User successfully Authenticated";
-                result = await LoadRoleAndFunctions(result);
-                result.IsAuthenticated = true;
+                result.Error = e.Message;
             }
             return result;
         }

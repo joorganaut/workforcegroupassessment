@@ -28,25 +28,10 @@ namespace WF.Api.Providers
             var user = await u_system.ValidateUser(context.UserName, context.Password);
             if (user.IsAuthenticated)
             {
-                //validate calling IP
-                var approvedIP = user.ApprovedIP != null ? user.ApprovedIP.Split(',') : new string[] { "::1" };
-                if (approvedIP != null && approvedIP.Contains(callingIP))
-                {
-                    if (user != null && !string.IsNullOrWhiteSpace(user.Username) && user.Roles != null)
-                        foreach (UserRole role in user.Roles)
-                        {
-                            identity.AddClaim(new Claim(ClaimTypes.Role, role.Name));
-                        }
-                    identity.AddClaim(new Claim(ClaimTypes.Role, "admin"));//remember to uncomment
-                    identity.AddClaim(new Claim("username", context.UserName));
-                    identity.AddClaim(new Claim(ClaimTypes.Name, context.UserName.ToUpper()));
-                    context.Validated(identity);
-                }
-                else
-                {
-                    context.SetError("Invalid Grant", "Invalid Calling IP.");
-                    return;
-                }
+                identity.AddClaim(new Claim(ClaimTypes.Role, "admin"));//remember to uncomment
+                identity.AddClaim(new Claim("username", context.UserName));
+                identity.AddClaim(new Claim(ClaimTypes.Name, context.UserName.ToUpper()));
+                context.Validated(identity);
             }
             else
             {

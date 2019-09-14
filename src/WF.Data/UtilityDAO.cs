@@ -22,7 +22,7 @@ namespace WF.DAO
             var f_cfg = Fluently
                 .Configure(cfg)
                 .Mappings(m => m.FluentMappings
-                .AddFromAssembly(mappingAssembly)).Diagnostics(d=>d.Enable().OutputToFile(@"d:\Logs\fluent.txt"));
+                .AddFromAssembly(mappingAssembly)).Diagnostics(d=>d.Enable().OutputToFile(@"C:\Logs\fluent.txt"));
             cfg = f_cfg.BuildConfiguration();
             DBSchemaUpdate.GenerateSchema(cfg);
             //DBSchemaUpdate.GenerateSchema(f_cfg);

@@ -10,16 +10,17 @@ using WF.Core.Enums;
 namespace WF.Core.Data
 {
     [PrimaryKey("ID", AutoIncrement = true)]
+    [TableName("Transactions")]
     public class Transaction : BusinessObject
     {
-        public string SourceAccount { get; set; }
-        public string DestinationAccount { get; set; }
-        public decimal Amount { get; set; }
-        public string Narration { get; set; }
-        public bool Completed { get; set; }
-        public string TransactionRef { get; set; }
-        public string TraceID { get; set; }
-        public TransactionType Type { get; set; }
+        public virtual string SourceAccount { get; set; }
+        public virtual string DestinationAccount { get; set; }
+        public virtual decimal Amount { get; set; }
+        public virtual string Narration { get; set; }
+        public virtual bool Completed { get; set; }
+        public virtual string TransactionRef { get; set; }
+        public virtual string TraceID { get; set; }
+        public virtual TransactionType Type { get; set; }
     }
     public class TransactionMap : BusinessObjectMap<Transaction>
     {

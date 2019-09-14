@@ -11,10 +11,10 @@ using System.Threading;
 using Microsoft.Owin.Security.OAuth;
 using WF.Api.Providers;
 using System.Configuration;
-using WF.Api;
+//using WF.Api;
 
-[assembly: OwinStartup(typeof(WF.api.App_Start.Startup))]
-namespace WF.api.App_Start
+[assembly: OwinStartup(typeof(WF.Api.App_Start.Startup))]
+namespace WF.Api.App_Start
 {
     public class Startup
     {

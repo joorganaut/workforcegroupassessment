@@ -112,7 +112,7 @@ namespace WF.DAO.Common
         }
         public async Task<T> RetrieveDataObjectByParametersAsync(Expression<Func<T, bool>> selector = null)
         {
-            return await database.Query<T>().Where(selector).SingleOrDefaultAsync();
+            return await database.Query<T>().Where(selector).FirstOrDefaultAsync();
         }
         public async Task<Page<T>> RetrievePagedDataObjectsByParametersAsync(Expression<Func<T, bool>> selector = null, int batchSize = 500)
         {
