@@ -4,8 +4,6 @@ C:\Users\joorganaut\Documents\Personal\WorkForceAssessment\WF.Api.Tests\bin\Debu
 C:\Users\joorganaut\Documents\Personal\WorkForceAssessment\WF.Api.Tests\bin\Debug\WF.Api.Tests.dll.config
 C:\Users\joorganaut\Documents\Personal\WorkForceAssessment\WF.Api.Tests\bin\Debug\WF.Api.Tests.dll
 C:\Users\joorganaut\Documents\Personal\WorkForceAssessment\WF.Api.Tests\bin\Debug\WF.Api.Tests.pdb
-C:\Users\joorganaut\Documents\Personal\WorkForceAssessment\WF.Api.Tests\bin\Debug\WF.Api.Tests.dll.CodeAnalysisLog.xml
-C:\Users\joorganaut\Documents\Personal\WorkForceAssessment\WF.Api.Tests\bin\Debug\WF.Api.Tests.dll.lastcodeanalysissucceeded
 C:\Users\joorganaut\Documents\Personal\WorkForceAssessment\WF.Api.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
 C:\Users\joorganaut\Documents\Personal\WorkForceAssessment\WF.Api.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
 C:\Users\joorganaut\Documents\Personal\WorkForceAssessment\WF.Api.Tests\bin\Debug\Microsoft.Web.Infrastructure.dll
@@ -41,3 +39,5 @@ C:\Users\joorganaut\Documents\Personal\WorkForceAssessment\WF.Api.Tests\obj\Debu
 C:\Users\joorganaut\Documents\Personal\WorkForceAssessment\WF.Api.Tests\obj\Debug\WF.Api.Tests.csproj.CopyComplete
 C:\Users\joorganaut\Documents\Personal\WorkForceAssessment\WF.Api.Tests\obj\Debug\WF.Api.Tests.dll
 C:\Users\joorganaut\Documents\Personal\WorkForceAssessment\WF.Api.Tests\obj\Debug\WF.Api.Tests.pdb
+C:\Users\joorganaut\Documents\Personal\WorkForceAssessment\WF.Api.Tests\bin\Debug\WebActivatorEx.dll
+C:\Users\joorganaut\Documents\Personal\WorkForceAssessment\WF.Api.Tests\bin\Debug\Swashbuckle.Core.dll

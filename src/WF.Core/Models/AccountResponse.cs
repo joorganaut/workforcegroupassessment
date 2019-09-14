@@ -10,6 +10,6 @@ namespace WF.Core.Model
 {
     public class AccountResponse : Response, IHTTPObject
     {
-        public Account Account { get; set; }
+        public List<Account> Accounts { get; set; }
     }
 }

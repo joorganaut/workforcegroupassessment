@@ -78,6 +78,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Contracts\IBulkTransaction.cs" />
     <Compile Include="Contracts\IBusinessObject.cs" />
     <Compile Include="Contracts\IBusinessObjectMap.cs" />
     <Compile Include="Contracts\IHTTPObject.cs" />
@@ -93,11 +94,18 @@
     <Compile Include="Data\Transaction.cs" />
     <Compile Include="Data\UFunction.cs" />
     <Compile Include="Data\User.cs" />
+    <Compile Include="Enums\TransactionType.cs" />
+    <Compile Include="Models\AccountCreateRequest.cs" />
+    <Compile Include="Models\AccountCreateResponse.cs" />
     <Compile Include="Models\AccountRequest.cs" />
     <Compile Include="Models\AccountResponse.cs" />
     <Compile Include="Models\AuthenticationRequest.cs" />
     <Compile Include="Models\AuthenticationResponse.cs" />
+    <Compile Include="Models\CustomerRequest.cs" />
+    <Compile Include="Models\CustomerResponse.cs" />
     <Compile Include="Models\ErrorMessage.cs" />
+    <Compile Include="Models\TransactionRequest.cs" />
+    <Compile Include="Models\TransactionResponse.cs" />
     <Compile Include="Processors\BusinessObjectTransformer.cs" />
     <Compile Include="Processors\HTTPConfig.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -112,8 +120,6 @@
       <Name>AXAMansard.Framework</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Enums\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

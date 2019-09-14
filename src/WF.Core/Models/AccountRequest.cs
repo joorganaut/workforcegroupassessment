@@ -10,6 +10,7 @@ namespace WF.Core.Model
     public class AccountRequest : Request, IHTTPObject
     {
         public string AccountNumber { get; set; }
+        public string CustomerID { get; set; }
         public bool IsGL { get; set; }
         public string Error { get; set ; }
     }

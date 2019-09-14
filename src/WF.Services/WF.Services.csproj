@@ -31,8 +31,30 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Newtonsoft.Json.12.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Ninject, Version=3.3.4.0, Culture=neutral, PublicKeyToken=c7192dc5380945e7, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Ninject.3.3.4\lib\net45\Ninject.dll</HintPath>
+    </Reference>
+    <Reference Include="NPoco, Version=4.0.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\NPoco.4.0.2\lib\net45\NPoco.dll</HintPath>
+    </Reference>
+    <Reference Include="PagedList, Version=1.17.0.0, Culture=neutral, PublicKeyToken=abbb863e9397c5e1, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\PagedList.1.17.0.0\lib\net40\PagedList.dll</HintPath>
+    </Reference>
+    <Reference Include="Serilog, Version=2.0.0.0, Culture=neutral, PublicKeyToken=24c2f752a8e58a10, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Serilog.2.8.0\lib\net46\Serilog.dll</HintPath>
+    </Reference>
+    <Reference Include="Serilog.Sinks.File, Version=2.0.0.0, Culture=neutral, PublicKeyToken=24c2f752a8e58a10, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Serilog.Sinks.File.4.0.0\lib\net45\Serilog.Sinks.File.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -51,17 +73,31 @@
     <Compile Include="Common\ScriptLoader.cs" />
     <Compile Include="Common\ServiceLogger.cs" />
     <Compile Include="Common\UtilitySystem.cs" />
+    <Compile Include="CustomerSystem.cs" />
     <Compile Include="HTTPEngine.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RoleSystem.cs" />
+    <Compile Include="TransactionSystem.cs" />
     <Compile Include="UFunctionSystem.cs" />
     <Compile Include="UserSystem.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\lib\PANE.Framework\AXAMansard.Framework.csproj">
+      <Project>{26798E26-3520-4A64-A73A-B098A8DB7077}</Project>
+      <Name>AXAMansard.Framework</Name>
+    </ProjectReference>
     <ProjectReference Include="..\WF.Core\WF.Core.csproj">
       <Project>{C4319377-ED6B-4938-97B3-AA5CAA2A8193}</Project>
       <Name>WF.Core</Name>
     </ProjectReference>
+    <ProjectReference Include="..\WF.Data\WF.Data.csproj">
+      <Project>{473573D7-1A9E-4FE1-93B9-647523649446}</Project>
+      <Name>WF.Data</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

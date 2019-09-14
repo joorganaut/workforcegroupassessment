@@ -13,11 +13,11 @@ namespace WF.DAO
     public class AccountDAO
     {
         static NPCoreDAO<Account, long> DAO = new NPCoreDAO<Account, long>("CardConnection");
-        public async static Task<Account> SaveTransaction(Account trans)
+        public async static Task<Account> SaveAccount(Account trans)
         {
             return await DAO.SaveAsync(trans);
         }
-        public async static Task UpdateTransaction(Account trans)
+        public async static Task UpdateAccount(Account trans)
         {
             await DAO.UpdateAsync(trans, new List<string>());
         }

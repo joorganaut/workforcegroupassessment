@@ -8,10 +8,11 @@ namespace WF.Core.Contract
 {
     public interface IRequest
     {
-
+        bool IsXml { get; set; }
     }
     [Serializable]
     public abstract class Request : IRequest
     {
+        public bool IsXml { get; set; }
     }
 }

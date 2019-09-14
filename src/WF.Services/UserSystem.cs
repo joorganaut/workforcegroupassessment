@@ -215,24 +215,14 @@ namespace WF.Service
             catch (Exception e) { user.Error = e.Message; }
             return user;
         }
-        async Task<User> GetUserDetails(ADServiceRef.ServiceSoapClient client, User login)
+        async Task<User> GetUserDetails(User login)
         {
             try
             {
-                var response = await client.ADUserDetailsAsync(login.Username);
-                if (response != null && response.Body != null)
+                User response = null;// await client.ADUserDetailsAsync(login.Username);
+                if (true)//response != null && response.Body != null)
                 {
-                    var responseBody = response.Body;
-                    string authenticateResponse = responseBody.ADUserDetailsResult;
-                    var stringDetails = authenticateResponse.Split(new char[] { '|' }, StringSplitOptions.RemoveEmptyEntries);
-                    if (stringDetails != null && stringDetails.Length > 0)
-                    {
-                        login.FullName = stringDetails[0]; //login.Email = stringDetails[1];
-                    }
-                    else
-                    {
-                        await ServiceLogger.WriteLog($"Unable to Parse Service Response");
-                    }
+                    
                 }
                 else
                 {
@@ -245,36 +235,7 @@ namespace WF.Service
             }
             return login;
         }
-        async Task<User> GetUserGroups(ADServiceRef.ServiceSoapClient client, User login, string password)
-        {
-            try
-            {
-                var response = await client.GetGroupsAsync(login.Username, password);
-                if (response != null && response.Body != null)
-                {
-                    var responseBody = response.Body;
-                    string authenticateResponse = responseBody.GetGroupsResult;
-                    var stringDetails = authenticateResponse.Split(new char[] { '|' }, StringSplitOptions.RemoveEmptyEntries);
-                    if (stringDetails != null && stringDetails.Length > 0)
-                    {
-                       // login.Groups = stringDetails;
-                    }
-                    else
-                    {
-                        await ServiceLogger.WriteLog($"Unable to Parse Service Response");
-                    }
-                }
-                else
-                {
-                    await ServiceLogger.WriteLog($"No Authenticate response for User: {login.Username}");
-                }
-            }
-            catch (Exception e)
-            {
-                await ServiceLogger.WriteLog(e.Message);
-            }
-            return login;
-        }
+        
 
         //Web Methods
         //public async Task<LoginModel> WebLogin(LoginModel login)

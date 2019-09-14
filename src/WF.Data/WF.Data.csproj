@@ -83,7 +83,6 @@
   <ItemGroup>
     <Compile Include="AccountDAO.cs" />
     <Compile Include="Common\BusinessObjectDAO.cs" />
-    <Compile Include="Common\ExcelDAO.cs" />
     <Compile Include="Common\IBusinessObjectDAO.cs" />
     <Compile Include="Common\JsonDAO.cs" />
     <Compile Include="Common\NPCoreDAO.cs" />
