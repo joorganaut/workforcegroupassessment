@@ -1,0 +1,34 @@
+X:\simpli meds\Simply Meds\portal\lib\FluentNHibernate\bin\Debug\FluentNHibernate.XML
+X:\simpli meds\Simply Meds\portal\lib\FluentNHibernate\bin\Debug\FluentNHibernate.dll
+X:\simpli meds\Simply Meds\portal\lib\FluentNHibernate\bin\Debug\FluentNHibernate.pdb
+X:\simpli meds\Simply Meds\portal\lib\FluentNHibernate\bin\Debug\Iesi.Collections.dll
+X:\simpli meds\Simply Meds\portal\lib\FluentNHibernate\bin\Debug\NHibernate.dll
+X:\simpli meds\Simply Meds\portal\lib\FluentNHibernate\bin\Debug\Remotion.Linq.dll
+X:\simpli meds\Simply Meds\portal\lib\FluentNHibernate\bin\Debug\Antlr3.Runtime.dll
+X:\simpli meds\Simply Meds\portal\lib\FluentNHibernate\bin\Debug\NHibernate.pdb
+X:\simpli meds\Simply Meds\portal\lib\FluentNHibernate\bin\Debug\NHibernate.xml
+X:\simpli meds\Simply Meds\portal\lib\FluentNHibernate\bin\Debug\Iesi.Collections.xml
+X:\simpli meds\Simply Meds\portal\lib\FluentNHibernate\bin\Debug\Remotion.Linq.pdb
+X:\simpli meds\Simply Meds\portal\lib\FluentNHibernate\bin\Debug\Remotion.Linq.xml
+X:\simpli meds\Simply Meds\portal\lib\FluentNHibernate\obj\Debug\FluentNHibernate.dll
+X:\simpli meds\Simply Meds\portal\lib\FluentNHibernate\obj\Debug\FluentNHibernate.pdb
+X:\simpli meds\Simply Meds\portal\lib\FluentNHibernate\obj\Debug\FluentNHibernate.csprojAssemblyReference.cache
+X:\simpli meds\Simply Meds\portal\lib\FluentNHibernate\obj\Debug\FluentNHibernate.csproj.CoreCompileInputs.cache
+X:\simpli meds\Simply Meds\portal\lib\FluentNHibernate\obj\Debug\FluentNHibernate.csproj.CopyComplete
+X:\iProtect\iProtectX\lib\FluentNHibernate\obj\Debug\FluentNHibernate.csprojAssemblyReference.cache
+X:\iProtect\iProtectX\lib\FluentNHibernate\obj\Debug\FluentNHibernate.csproj.CoreCompileInputs.cache
+D:\Applications\scm\FirstBankBox\CardFeeCollection\lib\FluentNHibernate\obj\Debug\FluentNHibernate.csprojAssemblyReference.cache
+D:\Applications\scm\FirstBankBox\CardFeeCollection\lib\FluentNHibernate\obj\Debug\FluentNHibernate.csproj.CoreCompileInputs.cache
+D:\Applications\scm\FirstBankBox\CardFeeCollection\lib\FluentNHibernate\bin\Debug\FluentNHibernate.XML
+D:\Applications\scm\FirstBankBox\CardFeeCollection\lib\FluentNHibernate\bin\Debug\FluentNHibernate.dll
+D:\Applications\scm\FirstBankBox\CardFeeCollection\lib\FluentNHibernate\bin\Debug\FluentNHibernate.pdb
+D:\Applications\scm\FirstBankBox\CardFeeCollection\lib\FluentNHibernate\bin\Debug\NHibernate.dll
+D:\Applications\scm\FirstBankBox\CardFeeCollection\lib\FluentNHibernate\bin\Debug\Remotion.Linq.dll
+D:\Applications\scm\FirstBankBox\CardFeeCollection\lib\FluentNHibernate\bin\Debug\Remotion.Linq.EagerFetching.dll
+D:\Applications\scm\FirstBankBox\CardFeeCollection\lib\FluentNHibernate\bin\Debug\Antlr3.Runtime.dll
+D:\Applications\scm\FirstBankBox\CardFeeCollection\lib\FluentNHibernate\bin\Debug\NHibernate.pdb
+D:\Applications\scm\FirstBankBox\CardFeeCollection\lib\FluentNHibernate\bin\Debug\NHibernate.xml
+D:\Applications\scm\FirstBankBox\CardFeeCollection\lib\FluentNHibernate\bin\Debug\Iesi.Collections.xml
+D:\Applications\scm\FirstBankBox\CardFeeCollection\lib\FluentNHibernate\obj\Debug\FluentNHibernate.csproj.CopyComplete
+D:\Applications\scm\FirstBankBox\CardFeeCollection\lib\FluentNHibernate\obj\Debug\FluentNHibernate.dll
+D:\Applications\scm\FirstBankBox\CardFeeCollection\lib\FluentNHibernate\obj\Debug\FluentNHibernate.pdb
