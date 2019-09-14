@@ -712,10 +712,10 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>01/23/2014 13:57:34</publishTime>
     </File>
     <File Include="bin/WF.Api.dll">
-      <publishTime>09/14/2019 15:46:39</publishTime>
+      <publishTime>09/14/2019 15:51:24</publishTime>
     </File>
     <File Include="bin/WF.Api.pdb">
-      <publishTime>09/14/2019 15:46:39</publishTime>
+      <publishTime>09/14/2019 15:51:24</publishTime>
     </File>
     <File Include="bin/WF.Core.dll">
       <publishTime>09/14/2019 15:28:52</publishTime>
@@ -925,7 +925,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>09/14/2019 09:28:47</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>09/14/2019 15:46:41</publishTime>
+      <publishTime>09/14/2019 15:51:25</publishTime>
     </File>
   </ItemGroup>
 </Project>
